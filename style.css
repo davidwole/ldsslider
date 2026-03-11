@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding/border are included in element's total width/height */
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  padding-inline: 10.9375rem;
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.first-nav {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.first-nav i {
+  color: rgb(102, 152, 42);
+  font-size: 28px;
+}
+
+.first-nav li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.second-nav {
+  gap: 24px;
+}
+
+.slider {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.slider-media {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-text {
+  border-radius: 18px;
+  background: rgb(145, 196, 75);
+  position: relative;
+  left: -5px;
+  width: 389px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-one {
+  width: 582px;
+  height: 700px;
+  border-radius: 18px;
+}
+
+.image-two {
+  position: relative;
+  right: -5px;
+  width: 466px;
+  height: 346px;
+  border-radius: 18px;
+}
+
+.image-three {
+  position: relative;
+  right: -5px;
+  width: 466px;
+  height: 346px;
+  border-radius: 18px;
+}
+
+.slider-image-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slider-heading {
+  color: black;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.slider-text h1 {
+  color: black;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.slider-text span {
+  font-family: "Kalam", cursive;
+  font-size: 80px;
+  display: block;
+}
+
+.slider-span {
+  color: white;
+}
