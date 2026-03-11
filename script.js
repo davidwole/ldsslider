@@ -35,13 +35,13 @@ function nextSlide() {
 
   // Set timing: 19s (19000ms) if current (now new) slide is 0, else 6s (6000ms)
   // Note: showSlide updates currentIndex
-  const duration = currentIndex === 0 ? 19000 : 6000;
+  const duration = currentIndex === 0 ? 18000 : 6000;
   // const duration = currentIndex === 0 ? 1000 : 1000;
   setTimeout(nextSlide, duration);
 }
 
 // Start the loop with the first duration
-setTimeout(nextSlide, 19000);
+setTimeout(nextSlide, 18000);
 // setTimeout(nextSlide, 1000);
 
 // Mobile Menu Toggle
