@@ -17,6 +17,30 @@ li {
   padding-block: 1.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1001;
+}
+
+.header img {
+  height: 50px;
+  width: auto;
+}
+
+.menu-toggle,
+.menu-close {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .nav {
@@ -114,9 +138,9 @@ li {
 .image-two {
   position: relative;
   right: -5px;
-  width: 466px;
+  width: 466px !important;
   height: 346px;
-  height: 289.5px;
+  height: 289.5px !important;
   border-radius: 18px;
 }
 
@@ -200,5 +224,124 @@ li {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+  .header {
+    padding-inline: 2rem;
+  }
+
+  .slider {
+    flex-direction: column;
+    padding-inline: 2rem;
+  }
+
+  .slider-text {
+    width: 100%;
+    height: auto;
+    padding-block: 3rem;
+    left: 0;
+  }
+
+  .slider-image-group {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .image-one,
+  .image-two,
+  .image-three,
+  .video-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    right: 0;
+  }
+
+  .slider-media {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    padding: 60px 20px;
+    justify-content: flex-start;
+    z-index: 1000;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .menu-close {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .first-nav {
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+
+  .first-nav li {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .second-nav {
+    gap: 15px;
+  }
+
+  .slider-text h1,
+  .slider-heading {
+    font-size: 32px;
+  }
+
+  .slider-text span {
+    font-size: 50px;
+  }
+
+  .slider-image-group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-inline: 1rem;
+  }
+
+  .slider {
+    padding-inline: 1rem;
+  }
+
+  .slider-text h1,
+  .slider-heading {
+    font-size: 24px;
+  }
+
+  .slider-text span {
+    font-size: 40px;
   }
 }
